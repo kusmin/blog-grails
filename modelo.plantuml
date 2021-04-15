@@ -1,0 +1,16 @@
+@startuml modelo
+
+class Categoria {
+    nome: string
+}
+
+class Post {
+    titulo: string
+    dataPublicacao: string
+    conteudo: string
+    categoria: Categoria
+}
+
+Post --> Categoria
+
+@enduml
